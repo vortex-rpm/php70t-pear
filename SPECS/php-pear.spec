@@ -101,7 +101,7 @@ Obsoletes: php70w-pear <= %{version}
 # XML_Util, Structures_Graph require 5.3
 # Console_Getopt requires 5.4
 # PEAR requires 5.4
-Requires:  %{?scl_prefix}php(language) > 5.4
+Requires:  %{?scl_prefix}php(language) > 7.0
 Requires:  %{?scl_prefix}php-cli
 # phpci detected extension
 # PEAR (date, spl always builtin):
