@@ -33,7 +33,7 @@
 #global pearprever dev3
 
 Summary: PHP Extension and Application Repository framework
-Name: %{?scl_prefix}php-pear
+Name: php70t-pear
 Version: 1.10.1
 Release: 1.vortex%{?dist}
 Epoch: 1
