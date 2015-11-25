@@ -58,9 +58,9 @@ Source25: http://pear.php.net/get/PEAR_Manpages-%{manpages}.tgz
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-BuildRequires: %{?scl_prefix}php(language) > 5.4
-BuildRequires: %{?scl_prefix}php70t-cli
-BuildRequires: %{?scl_prefix}php70t-xml
+BuildRequires: php70t
+BuildRequires: php70t-cli
+BuildRequires: php70t-xml
 BuildRequires: gnupg
 %if %{with_tests}
 BuildRequires:  %{_bindir}/phpunit
