@@ -59,8 +59,8 @@ Source25: http://pear.php.net/get/PEAR_Manpages-%{manpages}.tgz
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: %{?scl_prefix}php(language) > 5.4
-BuildRequires: %{?scl_prefix}php-cli
-BuildRequires: %{?scl_prefix}php-xml
+BuildRequires: %{?scl_prefix}php70t-cli
+BuildRequires: %{?scl_prefix}php70t-xml
 BuildRequires: gnupg
 %if %{with_tests}
 BuildRequires:  %{_bindir}/phpunit
@@ -224,7 +224,7 @@ install -m 644 -D macros.pear \
            $RPM_BUILD_ROOT%{macrosdir}/macros.%{?scl_prefix}pear
 
 # apply patches on installed PEAR tree
-pushd $RPM_BUILD_ROOT%{peardir} 
+pushd $RPM_BUILD_ROOT%{peardir}
 # none
 popd
 
@@ -758,7 +758,7 @@ fi
 - fix /usr/bin/{pecl,peardev} (#174882)
 
 * Thu Dec  1 2005 Joe Orton <jorton@redhat.com> 1:1.4.5-2
-- add virtual provides (#173806) 
+- add virtual provides (#173806)
 
 * Wed Nov 23 2005 Joe Orton <jorton@redhat.com> 1.4.5-1
 - initial build (Epoch: 1 to allow upgrade from php-pear-5.x)
