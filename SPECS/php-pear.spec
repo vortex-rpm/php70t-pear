@@ -35,7 +35,7 @@
 Summary: PHP Extension and Application Repository framework
 Name: php70t-pear
 Version: 1.10.1
-Release: 1.vortex%{?dist}
+Release: 2.vortex%{?dist}
 Epoch: 1
 # PEAR, PEAR_Manpages, Archive_Tar, XML_Util, Console_Getopt are BSD
 # Structures_Graph is LGPLv3+
@@ -380,6 +380,9 @@ fi
 
 
 %changelog
+* Mon Dec 21 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> 1:1.10.1-2.vortex
+- Rebuilt against php70t-7.0.1-1.vortex.
+
 * Mon Nov 23 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> 1:1.10.1-1.vortex
 - Tyring to port to vortex.
 
